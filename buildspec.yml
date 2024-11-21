@@ -3,10 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
-       - echo "testing" >&1
-       - echo "memes" >&2
-       - echo "testing cats" >/dev/null
-       - echo "testing cats" >/dev/stdout
+       - echo "testing" > &1
+       - echo "memes" > &2
+       - echo "testing cats" > /dev/null
+       - echo "testing cats" > /dev/stdout
        - echo "testing non redirect"
        - echo memes > test
        - cat test >&1
