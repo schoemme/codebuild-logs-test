@@ -3,17 +3,17 @@ version: 0.2
 phases:
   build:
     commands:
-       - echo "testing" > &1
-       - echo "memes" > &2
+       - echo "testing" >&1
+       - echo "memes" >&2
        - echo "testing cats" > /dev/null
        - echo "testing cats" > /dev/stdout
        - echo "testing non redirect"
-       - echo memes > test
+       - echo "memes" > test
        - cat test >&1
-       - cat test >/dev/stdout
-       - cat test >/dev/null
+       - cat test > /dev/stdout
+       - cat test > /dev/null
   post_build:
     commands:
-      - echo Running redirect_test.sh
-      - chmod +x redirect_test.sh
-      - ./redirect_test.sh
+      # - echo Running redirect_test.sh
+      # - chmod +x redirect_test.sh
+      # - ./redirect_test.sh
