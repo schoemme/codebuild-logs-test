@@ -17,11 +17,11 @@ generate_output
 echo -e "\n=== Test 2: Redirecting stdout to /dev/null ==="
 generate_output 1>/dev/null
 
-# echo -e "\n=== Test 3: Redirecting stderr to /dev/null ==="
-# generate_output 2>/dev/null
+echo -e "\n=== Test 3: Redirecting stderr to /dev/null ==="
+generate_output 2>/dev/null
 
-# echo -e "\n=== Test 4: Redirecting both stdout and stderr to /dev/null ==="
-# generate_output >/dev/null 2>&1
+echo -e "\n=== Test 4: Redirecting both stdout and stderr to /dev/null ==="
+generate_output >/dev/null 2>&1
 
 # echo -e "\n=== Test 5: Redirecting stdout to /dev/stdout ==="
 # generate_output >/dev/stdout
