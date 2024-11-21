@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-       - echo "testing to >&1" >&1
+       # - echo "testing to >&1" >&1
        # - echo "testing to >&2" >&2
        # - echo "testing to /dev/null" > /dev/null
        # - echo "testing to /dev/stdout" > /dev/stdout
