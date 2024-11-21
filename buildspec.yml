@@ -13,7 +13,7 @@ phases:
        - cat test >&1
        - echo "test /dev/stdout from file" > test
        # Uncomment next line to break things
-       - cat test > /dev/stdout
+       # - cat test > /dev/stdout
        - echo "test /dev/null from file" > test
        - cat test > /dev/null
   post_build:
