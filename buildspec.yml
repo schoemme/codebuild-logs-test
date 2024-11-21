@@ -6,16 +6,18 @@ phases:
        - echo "testing to >&1" >&1
        - echo "testing to >&2" >&2
        - echo "testing to /dev/null" > /dev/null
+       # Uncomment next line to break things
        # - echo "testing to /dev/stdout" > /dev/stdout
-       # - echo "testing non redirect"
-       # - echo "test >&1 from file" > test
-       # - cat test >&1
+       - echo "testing non redirect"
+       - echo "test >&1 from file" > test
+       - cat test >&1
        - echo "test /dev/stdout from file" > test
+       # Uncomment next line to break things
        - cat test > /dev/stdout
-       # - echo "test /dev/null from file" > test
-       # - cat test > /dev/null
+       - echo "test /dev/null from file" > test
+       - cat test > /dev/null
   post_build:
     commands:
-      # - echo Running redirect_test.sh
-      # - chmod +x redirect_test.sh
-      # - ./redirect_test.sh
+      - echo Running redirect_test.sh
+      - chmod +x redirect_test.sh
+      - ./redirect_test.sh
