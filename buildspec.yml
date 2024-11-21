@@ -12,3 +12,8 @@ phases:
        - cat test >&1
        - cat test >/dev/stdout
        - cat test >/dev/null
+  post_build:
+    commands:
+      - echo Running redirect_test.sh
+      - chmod +x redirect_test.sh
+      - ./redirect_test.sh
