@@ -10,8 +10,8 @@ phases:
        - echo "testing non redirect"
        - echo "test >&1 from file" > test
        - cat test >&1
-       # - echo "test /dev/stdout from file" > test
-       # - cat test > /dev/stdout
+       - echo "test /dev/stdout from file" > test
+       - cat test > /dev/stdout
        # - echo "test /dev/null from file" > test
        # - cat test > /dev/null
   post_build:
