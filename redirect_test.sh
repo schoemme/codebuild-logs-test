@@ -23,8 +23,8 @@ generate_output
 # echo -e "\n=== Test 4: Redirecting both stdout and stderr to /dev/null ==="
 # generate_output >/dev/null 2>&1
 
-# echo -e "\n=== Test 5: Redirecting stdout to /dev/stdout ==="
-# generate_output >/dev/stdout
+echo -e "\n=== Test 5: Redirecting stdout to /dev/stdout ==="
+generate_output >/dev/stdout
 
 # echo -e "\n=== Test 6: Explicitly redirecting stderr to stdout using 2>&1 ==="
 # generate_error 2>&1
