@@ -3,13 +3,13 @@ version: 0.2
 phases:
   build:
     commands:
-       # - echo "testing to >&1" >&1
-       # - echo "testing to >&2" >&2
-       # - echo "testing to /dev/null" > /dev/null
-       # - echo "testing to /dev/stdout" > /dev/stdout
+       - echo "testing to >&1" >&1
+       - echo "testing to >&2" >&2
+       - echo "testing to /dev/null" > /dev/null
+       - echo "testing to /dev/stdout" > /dev/stdout
        - echo "testing non redirect"
-       - echo "test >&1 from file" > test
-       - cat test >&1
+       # - echo "test >&1 from file" > test
+       # - cat test >&1
        - echo "test /dev/stdout from file" > test
        - cat test > /dev/stdout
        - echo "test /dev/null from file" > test
